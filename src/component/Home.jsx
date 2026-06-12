@@ -155,7 +155,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div>
+        <div className="container mx-auto px-6 grid md:grid-cols-4 gap-8">
           <div className="bg-white p-6 rounded-xl shadow">
             <img
               src={doctorImage}
