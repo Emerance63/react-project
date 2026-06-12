@@ -1,33 +1,30 @@
-import heroImage from "../assets/hero.png";
+import heroImage from "../assets/hospital bg.jpg";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navbar */}
       <nav className="bg-white shadow-md">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-blue-600">
-            HealthCare+
-          </h1>
+          <h1 className="text-2xl font-bold text-blue-600">HealthCare+</h1>
 
           <ul className="hidden md:flex gap-8 font-medium">
             <li>
-              <a href="#" className="hover:text-blue-600">
+              <a href="#hero" className="hover:text-blue-600">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-600">
+              <a href="#services" className="hover:text-blue-600">
                 Services
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-600">
+              <a href="#doctors" className="hover:text-blue-600">
                 Doctors
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-600">
+              <a href="#contact" className="hover:text-blue-600">
                 Contact
               </a>
             </li>
@@ -39,8 +36,10 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="container mx-auto px-6 py-20">
+      <section
+        id="hero"
+        className="container mx-auto px-6 py-20 bg-[url('../assets/hospital bg.jpg')] bg-cover bg-center rounded-2xl shadow-lg"
+      >
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-blue-600 font-semibold mb-3">
@@ -52,9 +51,9 @@ export default function Home() {
             </h1>
 
             <p className="text-gray-600 text-lg mb-8">
-              We provide world-class healthcare services with
-              experienced doctors, modern facilities, and
-              compassionate care for every patient.
+              We provide world-class healthcare services with experienced
+              doctors, modern facilities, and compassionate care for every
+              patient.
             </p>
 
             <div className="flex gap-4">
@@ -69,50 +68,40 @@ export default function Home() {
           </div>
 
           <div>
-            <img
+            {/* <img
               src={heroImage}
               alt="Hospital"
               className="rounded-2xl shadow-lg"
-            />
+            /> */}
           </div>
         </div>
       </section>
 
-      {/* Services */}
-      <section className="py-20 bg-white">
+      <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Our Services
-          </h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-blue-50 p-6 rounded-xl shadow">
-              <h3 className="text-xl font-bold mb-3">
-                Emergency Care
-              </h3>
+              <h3 className="text-xl font-bold mb-3">Emergency Care</h3>
               <p className="text-gray-600">
-                24/7 emergency services with skilled medical
-                professionals ready to help.
+                24/7 emergency services with skilled medical professionals ready
+                to help.
               </p>
             </div>
 
             <div className="bg-blue-50 p-6 rounded-xl shadow">
-              <h3 className="text-xl font-bold mb-3">
-                Specialist Doctors
-              </h3>
+              <h3 className="text-xl font-bold mb-3">Specialist Doctors</h3>
               <p className="text-gray-600">
-                Access experienced specialists across various
-                medical fields.
+                Access experienced specialists across various medical fields.
               </p>
             </div>
 
             <div className="bg-blue-50 p-6 rounded-xl shadow">
-              <h3 className="text-xl font-bold mb-3">
-                Laboratory Services
-              </h3>
+              <h3 className="text-xl font-bold mb-3">Laboratory Services</h3>
               <p className="text-gray-600">
-                Modern diagnostic and laboratory facilities for
-                accurate results.
+                Modern diagnostic and laboratory facilities for accurate
+                results.
               </p>
             </div>
           </div>
@@ -146,16 +135,71 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+      <section id="doctors" className="py-20 bg-gray-100">
+        <div>
+          <p className="text-lg text-gray-600 text-center mb-4">
+            Meet Our Team
+          </p>
+          <h1 className="text-4xl font-bold text-center">
+            Specialists who know your name, not just your file
+          </h1>
+        </div>
+
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Meet Our Doctors
+          </h2>
+        </div>
+
+        <div>
+          <div className="bg-white p-6 rounded-xl shadow">
+            <img
+              src={doctorImage}
+              alt="Dr. John Doe"
+              className="rounded-full mx-auto mb-4"
+            />
+            <p className="text-xl font-bold">Dr. John Doe</p>
+            <p className="text-gray-600">Cardiologist</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow">
+            <img
+              src={doctorImage}
+              alt="Dr. Jane Smith"
+              className="rounded-full mx-auto mb-4"
+            />
+            <p className="text-xl font-bold">Dr. Jane Smith</p>
+            <p className="text-gray-600">Neurologist</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow">
+            <img
+              src={doctorImage}
+              alt="Dr. Emily Davis"
+              className="rounded-full mx-auto mb-4"
+            />
+            <p className="text-xl font-bold">Dr. Emily Davis</p>
+            <p className="text-gray-600">Pediatrician</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow">
+            <img
+              src={doctorImage}
+              alt="Dr. Michael Brown"
+              className="rounded-full mx-auto mb-4"
+            />
+            <p className="text-xl font-bold">Dr. Michael Brown</p>
+            <p className="text-gray-600">Orthopedic Surgeon</p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">
-            Need Medical Assistance?
-          </h2>
+          <h2 className="text-4xl font-bold mb-4">Need Medical Assistance?</h2>
 
           <p className="text-gray-600 mb-8">
-            Schedule an appointment with our healthcare experts
-            today.
+            Schedule an appointment with our healthcare experts today.
           </p>
 
           <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">
@@ -164,16 +208,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <h3 className="text-xl font-bold mb-2">
-            HealthCare+
-          </h3>
+          <h3 className="text-xl font-bold mb-2">HealthCare+</h3>
 
-          <p>
-            © 2026 HealthCare+. All Rights Reserved.
-          </p>
+          <p>© 2026 HealthCare+. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
