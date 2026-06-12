@@ -1,4 +1,8 @@
 import heroImage from "../assets/hospital bg.jpg";
+import doctorImage from "../assets/docture1.jpg";
+import docture2 from "../assets/docture2.jpg";
+import docture3 from "../assets/docture3.jpg";
+import docture4 from "../assets/docture4.jpg";
 
 export default function Home() {
   return (
@@ -38,7 +42,7 @@ export default function Home() {
 
       <section
         id="hero"
-        className="container mx-auto px-6 py-20 bg-[url('../assets/hospital bg.jpg')] bg-cover bg-center rounded-2xl shadow-lg"
+        className="container mx-auto px-6 "
       >
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -68,11 +72,11 @@ export default function Home() {
           </div>
 
           <div>
-            {/* <img
+            <img
               src={heroImage}
               alt="Hospital"
               className="rounded-2xl shadow-lg"
-            /> */}
+            />
           </div>
         </div>
       </section>
