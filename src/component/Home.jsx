@@ -75,7 +75,7 @@ export default function Home() {
             <img
               src={heroImage}
               alt="Hospital"
-              className="rounded-2xl shadow-lg"
+              className="rounded-2xl shadow-lg "
             />
           </div>
         </div>
