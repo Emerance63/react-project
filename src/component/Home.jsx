@@ -2,7 +2,7 @@ import heroImage from "../assets/hospital bg.jpg";
 import doctorImage from "../assets/docture1.jpg";
 import docture2 from "../assets/docture2.jpg";
 import docture3 from "../assets/docture3.jpg";
-import docture4 from "../assets/docture4.jpg";
+ import docture4 from "../assets/docture 4.jpg";
 
 export default function Home() {
   return (
@@ -168,7 +168,7 @@ export default function Home() {
 
           <div className="bg-white p-6 rounded-xl shadow">
             <img
-              src={doctorImage}
+              src={docture2 }
               alt="Dr. Jane Smith"
               className="rounded-full mx-auto mb-4"
             />
@@ -178,7 +178,7 @@ export default function Home() {
 
           <div className="bg-white p-6 rounded-xl shadow">
             <img
-              src={doctorImage}
+              src={docture3}
               alt="Dr. Emily Davis"
               className="rounded-full mx-auto mb-4"
             />
@@ -188,7 +188,7 @@ export default function Home() {
 
           <div className="bg-white p-6 rounded-xl shadow">
             <img
-              src={doctorImage}
+              src={docture4}
               alt="Dr. Michael Brown"
               className="rounded-full mx-auto mb-4"
             />
